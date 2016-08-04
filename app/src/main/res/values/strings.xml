@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TwitterSearch</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Search page strings-->
+
+    <string name="Search_PlaceHolder">Search</string>
+    <string name="LoginPlaceHolder">Twitter Search</string>
+    <string name="login_page_title">Please Login to Continue</string>
+    LoginPlaceHolder
+</resources>

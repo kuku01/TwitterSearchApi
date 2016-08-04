@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/loginToolbar"
+        layout="@layout/login_page_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/loginToolbar"
+        android:background="#fff"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/login_page_title"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+        <ImageView
+            android:src="@drawable/twitterlogo_big"
+            android:layout_below="@+id/tvTitle"
+            android:layout_width="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="100dp" />
+
+        <com.twitter.sdk.android.core.identity.TwitterLoginButton
+            android:id="@+id/twitter_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tvLoginStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/twitter_login_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

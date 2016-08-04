@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/searchToolbar"
+        layout="@layout/serach_page_toolbar" />
+
+    <LinearLayout
+
+        android:id="@+id/rg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchToolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="33"
+                android:background="@drawable/radiobg"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:gravity="center"
+                android:text="Tweets" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="33"
+                android:background="@drawable/radiobg"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="User" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="33"
+                android:background="@drawable/radiobg"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="Hashtags" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bSearch"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rg1"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Search"
+        android:textColor="@android:color/white" />
+
+    <ListView
+        android:id="@+id/ResultsList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bSearch"
+        android:layout_marginTop="10dp"
+        android:background="#fff" />
+
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/searchPageToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/twitterlogo" />
+
+    <TextView
+        android:id="@+id/searchPageToolbar_etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/LoginPlaceHolder"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+
+</android.support.v7.widget.Toolbar>

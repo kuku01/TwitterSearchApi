@@ -1,0 +1,25 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/searchPageToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#c0deed"
+    >
+
+
+    <EditText
+        android:id="@+id/searchPageToolbar_etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/border_edittext"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:drawableEnd="@android:drawable/ic_menu_search"
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:hint="@string/Search_PlaceHolder"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+</android.support.v7.widget.Toolbar>
